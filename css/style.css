@@ -29,7 +29,7 @@ body {
     font-family: "Raleway", sans-serif;
     text-shadow: 0 1px 1px rgba(0,0,0,.4);
     line-height:1.6;
-    color:#eee;
+    color:#fff;
     background-color:#1b1a1f;
     background-image: url("../images/bg.jpg");
     background-repeat: no-repeat;
@@ -38,6 +38,12 @@ body {
     background-position: center center;
     height:100%;
     position: relative;
+	-webkit-touch-callout: none; 
+	-webkit-user-select: none;   
+	-khtml-user-select: none;    
+	-moz-user-select: none;      
+	-ms-user-select: none;       
+	user-select: none;  
 }
 /*Content
 ------------------*/
@@ -107,7 +113,7 @@ i {margin: 2em 0.4em}
 i:before {
     font-size:2em;
     display: block;
-    border: 1px solid #eee;
+    border: 1px solid #fff;
     padding: 1rem;
     border-radius: 100%;
     min-width: 32px;
@@ -151,7 +157,7 @@ a:hover i:before {background-color: rgba(255,255,255,.15)}
 /*Links
 ------------------*/
 a {
-    color: #eee;
+    color: #fff;
     text-decoration: none;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
