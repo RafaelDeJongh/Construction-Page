@@ -151,6 +151,26 @@ a i:before {
 	transition:all .3s ease;
 }
 a:hover i:before {background-color:rgba(255,255,255,.15)}
+/*FadeInOnLoad
+------------------*/
+@-webkit-keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@-moz-keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+#content {
+	opacity:0;
+	-webkit-animation:fadeIn ease-in 1;
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+	-webkit-animation-duration:.5s;
+	-moz-animation-duration:.5s;
+	animation-duration:.5s;
+	-webkit-animation-delay:.4s;
+	-moz-animation-delay:.4s;
+	animation-delay:.4s;
+}
 /*MediaQueries
 ------------------*/
 @media screen and (max-width:630px){ 
