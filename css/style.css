@@ -204,7 +204,7 @@ a:hover i:before {background-color:rgba(255,255,255,.15)}
 }
 /*Links
 ------------------*/
-a {
+a{
 	color:#fff;
 	text-decoration:none;
 	-webkit-transition:all .3s ease;
@@ -213,6 +213,11 @@ a {
 	transition:all .3s ease;
 }
 a:visited, a:active, a:hover {color:#fff}
+/*Cursor
+------------------*/
+*{cursor:url("../images/cursors/default.png"),default}
+#content *,#content:hover,#content:active{cursor:url("../images/cursors/move.png"),move}
+#content a *:hover{cursor:url("../images/cursors/pointer.png"),pointer}
 /*Scrollbar
 ------------------*/
 ::-webkit-scrollbar {width:12px;height:12px;background-color:#121212}
