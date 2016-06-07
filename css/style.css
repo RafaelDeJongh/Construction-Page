@@ -185,8 +185,8 @@ a:hover i:before{background-color:rgba(255,255,255,.15)}
 }
 /*MediaQueries
 ------------------*/
-@media screen and (max-width:630px){ 
-	#content::before{
+@media screen and (max-width:630px){
+	#content::before,#content::after{
 		width:102%;
 		height:102%;
 		width:calc(100% + 10px);
@@ -199,18 +199,18 @@ a:hover i:before{background-color:rgba(255,255,255,.15)}
 		display:inline-block;
 		left:10%;
 	}
-	#content h1:before, #content h1:after{display:none}
+	#content h1:before,#content h1:after{display:none}
 }
-@media screen and (max-width:500px){ 
+@media screen and (max-width:500px){
 	#content h1{font-size:8vw}
 }
-@media screen and (max-width:450px){ 
+@media screen and (max-width:450px){
 	#content{top:15%}
 }
-@media screen and (max-width:410px){ 
+@media screen and (max-width:410px){
 	#content{top:10%} 
 }
-@media screen and (max-width:320px){ 
+@media screen and (max-width:320px){
 	#content{top:8%} 
 	i{margin:.6em .5em}
 }
