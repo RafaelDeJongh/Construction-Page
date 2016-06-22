@@ -1,1 +1,1 @@
-$(function(){$("#content").draggable({containment:"window"})});
+$(function(){$("main").draggable({containment:"window"})});

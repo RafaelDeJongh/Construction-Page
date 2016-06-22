@@ -1,5 +1,5 @@
 #Start General Optimisation
-<FilesMatch "\.(gif|png|jpg|jpeg|ico|pdf|js|htm|html|txt|css)$">
+<FilesMatch "\.(gif|png|jpg|jpeg|ico|pdf|js|htm|html|txt|css|php)$">
 	Header set Cache-Control "max-age=72576000, public, must-revalidate"
 </FilesMatch>
 <IfModule mod_deflate.c>
@@ -10,7 +10,7 @@
     BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|xml|gz)$">
+  <FilesMatch "\.(js|css|xml|gz|php)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
 </IfModule>
