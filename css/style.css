@@ -1,7 +1,6 @@
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,200);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
-/* This construction page is created by Rafael De Jongh.
+/* Created by Rafaël De Jongh.
+** Author URL: https://www.rafaeldejongh.com/
 ** This code is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 Content Table:
 --------------
@@ -11,6 +10,7 @@ Content Table:
 - Links
 - Scrollbar
 - Selection
+
 Reset
 ------------------*/
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
@@ -42,11 +42,11 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 html{
 	height:100%;
 	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	-moz-background-clip:padding-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
 	-webkit-background-clip:padding-box;
-	background-clip:padding-box;
+	   -moz-background-clip:padding-box;
+	        background-clip:padding-box;
 }
 body{
 	font-family:"Raleway", sans-serif;
@@ -55,7 +55,7 @@ body{
 	color:#fff;
 	background-color:#1b1a1f;
 	/*PHP Dynamic Background
-	background-image:url("../images/bg.php");
+	background-image:url("../images/bg/bg.php");
 	*/
 	background-image:url("../images/bg.jpg");
 	background-repeat:no-repeat;
@@ -99,10 +99,10 @@ main::after{
 	background-attachment:fixed;
 	background-position:center center;
 	/*PHP Dynamic Background
-	background-image:url("../images/bg.php");
-	background-image:-moz-linear-gradient(90deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg.php");
-	background-image:-webkit-linear-gradient(90deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg.php");
-	background-image:linear-gradient(0deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg.php");
+	background-image:url("../images/bg/bg.php");
+	background-image:-webkit-linear-gradient(90deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg/bg.php");
+	background-image:-moz-linear-gradient(90deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg/bg.php");
+	background-image:linear-gradient(0deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg/bg.php");
 	*/
 	background-image:url("../images/bg.jpg");
 	background-image:-moz-linear-gradient(90deg, rgba(100,100,100,.2), rgba(100,100,100,.2)), url("../images/bg.jpg");
@@ -122,11 +122,11 @@ main{
 	top:24%;
 	position:absolute;
 	-webkit-border-radius:4px;
-	-moz-border-radius:4px;
-	border-radius:4px;
-	-moz-box-shadow:0 10px 30px rgba(0,0,0,.6);
+	   -moz-border-radius:4px;
+	        border-radius:4px;
 	-webkit-box-shadow:0 10px 30px rgba(0,0,0,.6);
-	box-shadow:0 10px 30px rgba(0,0,0,.6);
+	   -moz-box-shadow:0 10px 30px rgba(0,0,0,.6);
+	        box-shadow:0 10px 30px rgba(0,0,0,.6);
 	border:1px solid rgba(255, 255, 255,.1);
 	padding:20px;
 	text-align:center;
@@ -134,22 +134,21 @@ main{
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box; 
 	-webkit-transition:box-shadow .3s ease-in-out;
-	-moz-transition:box-shadow .3s ease-in-out;
-	-o-transition:box-shadow .3s ease-in-out;
-	transition:box-shadow .3s ease-in-out;
+	   -moz-transition:box-shadow .3s ease-in-out;
+	        transition:box-shadow .3s ease-in-out;
 	overflow:hidden;
 }
 main:hover{
 	cursor:move;
-	-moz-box-shadow:0 10px 32px rgba(0,0,0,.7);
 	-webkit-box-shadow:0 10px 32px rgba(0,0,0,.7);
-	box-shadow:0 10px 32px rgba(0,0,0,.7);
+	   -moz-box-shadow:0 10px 32px rgba(0,0,0,.7);
+	        box-shadow:0 10px 32px rgba(0,0,0,.7);
 }
 main:active{
 	cursor:move;
-	-moz-box-shadow:0 10px 50px rgba(0,0,0,.9);
 	-webkit-box-shadow:0 10px 50px rgba(0,0,0,.9);
-	box-shadow:0 10px 50px rgba(0,0,0,.9);
+	   -moz-box-shadow:0 10px 50px rgba(0,0,0,.9);
+	        box-shadow:0 10px 50px rgba(0,0,0,.9);
 }
 main h1:before{
 	content:"\2013";
@@ -185,14 +184,14 @@ i:before{
 	min-width:32px;
 	min-height:32px;
 	-webkit-box-shadow:0 1px 3px rgba(0,0,0,.4);
-	-moz-box-shadow:0 1px 3px rgba(0,0,0,.4);
-	box-shadow:0 1px 3px rgba(0,0,0,.4);
+	   -moz-box-shadow:0 1px 3px rgba(0,0,0,.4);
+	        box-shadow:0 1px 3px rgba(0,0,0,.4);
 }
 a i:before{
 	-webkit-transition:all .3s ease;
-	-moz-transition:all .3s ease;
-	-o-transition:all .3s ease;
-	transition:all .3s ease;
+	   -moz-transition:all .3s ease;
+	     -o-transition:all .3s ease;
+	        transition:all .3s ease;
 }
 a:hover i:before{background-color:rgba(255,255,255,.15)}
 /*FadeInOnLoad
@@ -203,17 +202,17 @@ a:hover i:before{background-color:rgba(255,255,255,.15)}
 main{
 	opacity:0;
 	-webkit-animation:fadeIn ease-in 1;
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
+	   -moz-animation:fadeIn ease-in 1;
+	        animation:fadeIn ease-in 1;
 	-webkit-animation-fill-mode:forwards;
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
+	   -moz-animation-fill-mode:forwards;
+	        animation-fill-mode:forwards;
 	-webkit-animation-duration:.5s;
-	-moz-animation-duration:.5s;
-	animation-duration:.5s;
+	   -moz-animation-duration:.5s;
+	        animation-duration:.5s;
 	-webkit-animation-delay:.4s;
-	-moz-animation-delay:.4s;
-	animation-delay:.4s;
+	   -moz-animation-delay:.4s;
+	        animation-delay:.4s;
 }
 /*MediaQueries
 ------------------*/
@@ -233,36 +232,21 @@ main{
 	}
 	main h1:before,main h1:after{display:none}
 }
-@media screen and (max-width:500px){
-	main h1{font-size:8vw}
-}
-@media screen and (max-width:450px){
-	main{top:15%}
-}
-@media screen and (max-width:410px){
-	main{top:10%} 
-}
-@media screen and (max-width:320px){
-	main{top:8%} 
-	i{margin:.6em .5em}
-}
+@media screen and (max-width:500px){main h1{font-size:8vw}}
+@media screen and (max-width:450px){main{top:15%}}
+@media screen and (max-width:410px){main{top:10%}}
+@media screen and (max-width:320px){main{top:8%}i{margin:.6em .5em}}
 /*Links
 ------------------*/
 a{
 	color:#fff;
 	text-decoration:none;
 	-webkit-transition:all .3s ease;
-	-moz-transition:all .3s ease;
-	-o-transition:all .3s ease;
-	transition:all .3s ease;
+	   -moz-transition:all .3s ease;
+	     -o-transition:all .3s ease;
+	        transition:all .3s ease;
 }
 a:visited, a:active, a:hover{color:#fff}
-/*Cursor
-------------------
-*{cursor:url("../images/cursors/default.png"),default}
-main *,main:hover,main:active{cursor:url("../images/cursors/move.png"),move}
-main a *:hover{cursor:url("../images/cursors/pointer.png"),pointer}
-*/
 /*Scrollbar
 ------------------*/
 ::-webkit-scrollbar{width:12px;height:12px;background-color:#121212}

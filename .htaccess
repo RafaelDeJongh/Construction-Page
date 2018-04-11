@@ -1,18 +1,30 @@
+# Security Headers
+<IfModule mod_headers.c>
+Header set Developed-By "Rafael De Jongh"
+Header set Content-Security-Policy "img-src 'self' https: data: blob:; font-src 'self' https: data:;"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1; mode=block"
+Header set Referrer-Policy "no-referrer-when-downgrade"
+Header set Expect-CT max-age=86400,enforce
+Header always edit Set-Cookie (.*) "$1;HttpOnly;Secure"
+Header set X-Content-Type-Options nosniff
+Header set Strict-Transport-Security "max-age=15552000; includeSubDomains; preload"
+</IfModule>
 #Start General Optimisation
 <FilesMatch "\.(gif|png|jpg|jpeg|ico|pdf|js|htm|html|txt|css|php)$">
 	Header set Cache-Control "max-age=72576000, public, must-revalidate"
 </FilesMatch>
 <IfModule mod_deflate.c>
-    AddOutputFilter DEFLATE js css
-    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml
-    BrowserMatch ^Mozilla/4 gzip-only-text/html
-    BrowserMatch ^Mozilla/4\.0[678] no-gzip
-    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
+	AddOutputFilter DEFLATE js css
+	AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(js|css|xml|gz|php)$">
-    Header append Vary: Accept-Encoding
-  </FilesMatch>
+	<FilesMatch "\.(js|css|xml|gz|php)$">
+		Header append Vary:Accept-Encoding
+	</FilesMatch>
 </IfModule>
 #End General Optimisation
 ErrorDocument 404 /index.html
