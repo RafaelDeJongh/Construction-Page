@@ -1,1 +1,6 @@
-$(function(){$("main").draggable({containment:"window"})});
+$(function() {
+	$(window).resize(function() {
+		$("main").removeAttr("style");
+	});
+	$("main").draggable({containment: "window"});
+});
